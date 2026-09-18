@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Hope Haven Youth Shelter | Two Locations</title>
+    <meta
+      name="description"
+      content="Contact Hope Haven Youth Shelter. 24-hour emergency line, e-mail, contact form and maps for our Johannesburg and Pretoria shelters."
+    />
+    <meta name="author" content="Tshegofatso Phatedi (ST10520900)" />
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <img src="images/logo.png" alt="Hope Haven Youth Shelter logo" />
+          <span>Hope Haven<br />Youth Shelter</span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          Menu
+        </button>
+        <nav class="site-nav" id="primary-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="enquiry.html">Get Involved</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+            <li><a class="btn btn-donate" href="enquiry.html#donate">Donate</a></li>
+            <li><a class="btn btn-help" href="#emergency">Get Help</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section" id="emergency">
+        <div class="wrap">
+          <h1>Contact us</h1>
+          <div class="occupancy">
+            <h2>Need help tonight?</h2>
+            <p>
+              Call our 24-hour intake line on
+              <a href="tel:+27800467336"><strong>0800 467 336</strong></a> or walk
+              in to either shelter at any hour. If you are in immediate danger,
+              call 10111.
+            </p>
+            <p>
+              You can also check
+              <a href="index.html#occupancy">current bed availability</a> on our
+              home page.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Two locations with maps ===== -->
+      <section class="section section-alt">
+        <div class="wrap">
+          <h2>Our locations</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>Johannesburg shelter (head office)</h3>
+              <p>
+                24 Juta Street, Braamfontein, Johannesburg, 2001<br />
+                Phone: <a href="tel:+27112345678">011 234 5678</a><br />
+                E-mail: <a href="mailto:jhb@hopehaven.org">jhb@hopehaven.org</a><br />
+                Reception: Monday to Friday, 08:00 - 17:00<br />
+                Intake: 24 hours
+              </p>
+              <iframe
+                class="map-frame"
+                title="Map of the Hope Haven Johannesburg shelter in Braamfontein"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=28.0300%2C-26.1990%2C28.0480%2C-26.1880&amp;layer=mapnik"
+                loading="lazy"
+              ></iframe>
+            </article>
+
+            <article class="card">
+              <h3>Pretoria shelter</h3>
+              <p>
+                118 Robert Sobukwe Street, Sunnyside, Pretoria, 0002<br />
+                Phone: <a href="tel:+27123456789">012 345 6789</a><br />
+                E-mail: <a href="mailto:pta@hopehaven.org">pta@hopehaven.org</a><br />
+                Reception: Monday to Friday, 08:00 - 16:30<br />
+                Intake: 24 hours
+              </p>
+              <iframe
+                class="map-frame"
+                title="Map of the Hope Haven Pretoria shelter in Sunnyside"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=28.1990%2C-25.7580%2C28.2170%2C-25.7470&amp;layer=mapnik"
+                loading="lazy"
+              ></iframe>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <h2>Send us a message</h2>
+          <form
+            data-confirm="Thank you for your message. We have sent you a confirmation e-mail and a team member will reply within two working days."
+            novalidate
+          >
+            <div class="form-row">
+              <div>
+                <label for="contact-name">Full name</label>
+                <input id="contact-name" name="contact-name" type="text" required />
+              </div>
+              <div>
+                <label for="contact-email">E-mail address</label>
+                <input id="contact-email" name="contact-email" type="email" required />
+              </div>
+              <div>
+                <label for="contact-phone">Contact number (optional)</label>
+                <input id="contact-phone" name="contact-phone" type="tel" />
+              </div>
+              <div>
+                <label for="contact-location">Which shelter?</label>
+                <select id="contact-location" name="contact-location" required>
+                  <option value="johannesburg">Johannesburg (Braamfontein)</option>
+                  <option value="pretoria">Pretoria (Sunnyside)</option>
+                  <option value="either">Either / not sure</option>
+                </select>
+              </div>
+            </div>
+
+            <label for="contact-subject">Reason for contact</label>
+            <select id="contact-subject" name="contact-subject" required>
+              <option value="">Please choose&hellip;</option>
+              <option value="help">I need help or shelter</option>
+              <option value="referral">I am referring a young person</option>
+              <option value="donate">Donations and fundraising</option>
+              <option value="volunteer">Volunteering</option>
+              <option value="media">Media and general enquiries</option>
+            </select>
+
+            <label for="contact-message">Your message</label>
+            <textarea id="contact-message" name="contact-message" rows="5" required></textarea>
+
+            <button class="btn btn-outline" type="submit">Send message</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap grid">
+        <div>
+          <h3>Hope Haven Youth Shelter</h3>
+          <p>
+            Emergency housing, counselling and vocational training for youth aged
+            16-24.
+          </p>
+        </div>
+        <div>
+          <h3>Quick links</h3>
+          <p>
+            <a href="index.html">Home</a> &middot;
+            <a href="about.html">About Us</a> &middot;
+            <a href="services.html">Services</a> &middot;
+            <a href="enquiry.html">Get Involved</a>
+          </p>
+        </div>
+        <div>
+          <h3>24-hour help line</h3>
+          <p><a href="tel:+27800467336">0800 467 336</a></p>
+          <p><a href="mailto:help@hopehaven.org">help@hopehaven.org</a></p>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <p>
+          &copy; 2026 Hope Haven Youth Shelter. Student project by Tshegofatso
+          Phatedi (ST10520900) for WEDE5020.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

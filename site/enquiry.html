@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Involved | Donate, Volunteer or Sponsor - Hope Haven</title>
+    <meta
+      name="description"
+      content="Make a one-time or monthly donation, sign up as a volunteer, or become a corporate sponsor of Hope Haven Youth Shelter."
+    />
+    <meta name="author" content="Tshegofatso Phatedi (ST10520900)" />
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <img src="images/logo.png" alt="Hope Haven Youth Shelter logo" />
+          <span>Hope Haven<br />Youth Shelter</span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          Menu
+        </button>
+        <nav class="site-nav" id="primary-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="enquiry.html" aria-current="page">Get Involved</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="btn btn-donate" href="#donate">Donate</a></li>
+            <li><a class="btn btn-help" href="contact.html#emergency">Get Help</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section">
+        <div class="wrap">
+          <h1>Get involved</h1>
+          <p>
+            Donations, volunteers and sponsors keep our doors open every night.
+            Choose how you would like to help below.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="donate">
+        <div class="wrap">
+          <h2>Make a donation</h2>
+          <p>
+            R250 provides a bed, meals and bedding for one young person for one
+            night. Monthly donors fund our counselling and skills programmes.
+          </p>
+
+          <form
+            data-confirm="Thank you! Your donation pledge has been recorded and a confirmation e-mail will be sent to you shortly."
+            novalidate
+          >
+            <fieldset>
+              <legend>Your details</legend>
+              <div class="form-row">
+                <div>
+                  <label for="donor-name">Full name</label>
+                  <input id="donor-name" name="donor-name" type="text" required />
+                </div>
+                <div>
+                  <label for="donor-email">E-mail address</label>
+                  <input id="donor-email" name="donor-email" type="email" required />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Your gift</legend>
+              <label for="donor-amount">Amount (ZAR)</label>
+              <input
+                id="donor-amount"
+                name="donor-amount"
+                type="number"
+                min="50"
+                step="10"
+                value="250"
+                required
+              />
+              <p class="hint">Minimum donation is R50.</p>
+
+              <label for="donor-frequency">Frequency</label>
+              <select id="donor-frequency" name="donor-frequency" required>
+                <option value="one-time">One-time donation</option>
+                <option value="monthly">Monthly recurring donation</option>
+              </select>
+
+              <label for="donor-designation">Where should we use your gift?</label>
+              <select id="donor-designation" name="donor-designation">
+                <option value="general">Where the need is greatest</option>
+                <option value="beds">Emergency beds and meals</option>
+                <option value="counselling">Counselling programme</option>
+                <option value="skills">Vocational training</option>
+              </select>
+
+              <label for="donor-message">Message (optional)</label>
+              <textarea id="donor-message" name="donor-message" rows="3"></textarea>
+            </fieldset>
+
+            <button class="btn btn-donate" type="submit">Pledge donation</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+            <p class="hint" style="margin-top: 14px">
+              Secure card payment processing is added in Part 2 of this project.
+            </p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section" id="volunteer">
+        <div class="wrap">
+          <h2>Volunteer with us</h2>
+          <p>
+            Volunteers tutor, cook, mentor and help run our outreach evenings. All
+            volunteers complete a short screening and induction.
+          </p>
+
+          <form
+            data-confirm="Thank you for signing up! An automatic confirmation e-mail is on its way and our volunteer coordinator will contact you within three working days."
+            novalidate
+          >
+            <fieldset>
+              <legend>Your details</legend>
+              <div class="form-row">
+                <div>
+                  <label for="vol-name">Full name</label>
+                  <input id="vol-name" name="vol-name" type="text" required />
+                </div>
+                <div>
+                  <label for="vol-email">E-mail address</label>
+                  <input id="vol-email" name="vol-email" type="email" required />
+                </div>
+                <div>
+                  <label for="vol-phone">Contact number</label>
+                  <input
+                    id="vol-phone"
+                    name="vol-phone"
+                    type="tel"
+                    pattern="[0-9+ ]{10,15}"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="vol-age">Age</label>
+                  <input id="vol-age" name="vol-age" type="number" min="18" max="99" required />
+                </div>
+              </div>
+              <p class="hint">Volunteers must be 18 years or older.</p>
+            </fieldset>
+
+            <fieldset>
+              <legend>How you would like to help</legend>
+              <label for="vol-role">Preferred role</label>
+              <select id="vol-role" name="vol-role" required>
+                <option value="">Please choose&hellip;</option>
+                <option value="tutoring">Saturday tutoring</option>
+                <option value="kitchen">Kitchen and meals</option>
+                <option value="mentoring">Youth mentoring</option>
+                <option value="outreach">Street outreach evenings</option>
+                <option value="admin">Admin and fundraising</option>
+              </select>
+
+              <label for="vol-location">Preferred shelter</label>
+              <select id="vol-location" name="vol-location" required>
+                <option value="johannesburg">Johannesburg (Braamfontein)</option>
+                <option value="pretoria">Pretoria (Sunnyside)</option>
+              </select>
+
+              <label for="vol-availability">Availability</label>
+              <textarea
+                id="vol-availability"
+                name="vol-availability"
+                rows="3"
+                placeholder="For example: weekday evenings and Saturday mornings"
+                required
+              ></textarea>
+            </fieldset>
+
+            <button class="btn btn-outline" type="submit">Sign up to volunteer</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="sponsor">
+        <div class="wrap">
+          <h2>Become a corporate sponsor</h2>
+          <p>
+            Sponsors fund a bed, a training course or a full programme for a year
+            and receive an annual impact report.
+          </p>
+
+          <form
+            data-confirm="Thank you. Our partnerships team has received your sponsorship enquiry and will be in touch within two working days."
+            novalidate
+          >
+            <div class="form-row">
+              <div>
+                <label for="sponsor-company">Company name</label>
+                <input id="sponsor-company" name="sponsor-company" type="text" required />
+              </div>
+              <div>
+                <label for="sponsor-contact">Contact person</label>
+                <input id="sponsor-contact" name="sponsor-contact" type="text" required />
+              </div>
+              <div>
+                <label for="sponsor-email">Work e-mail</label>
+                <input id="sponsor-email" name="sponsor-email" type="email" required />
+              </div>
+              <div>
+                <label for="sponsor-interest">Sponsorship interest</label>
+                <select id="sponsor-interest" name="sponsor-interest" required>
+                  <option value="bed">Sponsor a bed (R91 000 / year)</option>
+                  <option value="course">Sponsor a training course</option>
+                  <option value="programme">Sponsor a full programme</option>
+                  <option value="other">Something else</option>
+                </select>
+              </div>
+            </div>
+
+            <label for="sponsor-notes">Tell us more</label>
+            <textarea id="sponsor-notes" name="sponsor-notes" rows="4"></textarea>
+
+            <button class="btn btn-outline" type="submit">Send sponsorship enquiry</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap grid">
+        <div>
+          <h3>Hope Haven Youth Shelter</h3>
+          <p>
+            Emergency housing, counselling and vocational training for youth aged
+            16-24.
+          </p>
+        </div>
+        <div>
+          <h3>Quick links</h3>
+          <p>
+            <a href="index.html">Home</a> &middot;
+            <a href="about.html">About Us</a> &middot;
+            <a href="services.html">Services</a> &middot;
+            <a href="contact.html">Contact</a>
+          </p>
+        </div>
+        <div>
+          <h3>24-hour help line</h3>
+          <p><a href="tel:+27800467336">0800 467 336</a></p>
+          <p><a href="mailto:help@hopehaven.org">help@hopehaven.org</a></p>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <p>
+          &copy; 2026 Hope Haven Youth Shelter. Student project by Tshegofatso
+          Phatedi (ST10520900) for WEDE5020.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
